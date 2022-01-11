@@ -34,14 +34,14 @@
         <button class="add-task-button" type="submit" form="todo-form"><i class="icon bi bi-plus-circle-fill"></i>add
             task
         </button>
-        <button class="delete-task-button"><i class="icon bi bi-trash2-fill"></i>delete tasks</button>
+        <button class="delete-task-button" onclick="removeTasks()"><i class="icon bi bi-trash2-fill"></i>delete tasks</button>
     </div>
     <ul>
         <% for(let i of locals.data) { %>
             <li class="todo-list-item">
                 <div class="task-container">
                     <div>
-                        <input type="checkbox" name="" id="" class="task-checkbox">
+                        <input type="checkbox" id="<%=i._id%>" class="task-checkbox">
                         <div>
                             <h6 class="task-description-headline"><%= i.title %></h6>
                             <p class="task-date-subtitle"><i

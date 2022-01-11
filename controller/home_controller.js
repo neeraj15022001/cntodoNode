@@ -19,3 +19,15 @@ module.exports.add = (req, res) => {
         return res.redirect("back");
     })
 }
+module.exports.delete = (req, res) => {
+    const items = JSON.parse(req.query.items)
+    items.forEach(item => {
+        TODO.findByIdAndDelete(item, (err) => {
+            if (err) {
+                console.error("Error while deleting doc: ", err);
+                return;
+            }
+        })
+    })
+    return res.sendStatus(200)
+}
