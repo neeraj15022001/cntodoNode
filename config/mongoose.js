@@ -6,3 +6,5 @@ main()
 async function main() {
     await mongoose.connect("mongodb://localhost:27017/todo_db");
 }
+
+module.exports = mongoose.connection;

@@ -54,21 +54,6 @@ body {
     background-color: transparent;
 }
 
-.form-box > select {
-    appearance: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-}
-
-.form-box > select::after {
-    content: "";
-    display: inline-block;
-    vertical-align: -.125em;
-    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-caret-down-fill' viewBox='0 0 16 16'> <path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0'/> </svg>");
-    background-repeat: no-repeat;
-    background-size: 1rem 1rem;
-}
-
 .form-category {
     border-right: 1px solid darkgrey;
 }
