@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+// Schema for out todo list
 const todoSchema = new mongoose.Schema({
     title: {
         type: String,
@@ -14,5 +15,7 @@ const todoSchema = new mongoose.Schema({
     }
 })
 
+// Mapping this schema corresponding to TODO collection
 const TODO = mongoose.model("TODO", todoSchema);
+//exporting instance of this schema
 module.exports = TODO;
