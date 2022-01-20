@@ -10,12 +10,12 @@
     <form action="/add" method="post" id="todo-form">
         <div class="form-box">
             <label for="todo-description">description</label>
-            <input id="todo-description" type="text" name="title" placeholder="What do you mean to do?">
+            <input id="todo-description" type="text" name="title" placeholder="What do you mean to do?" required>
         </div>
         <div class="w-1/2">
             <div class="form-box form-category">
                 <label for="todo-category">category</label>
-                <select id="todo-category" name="category">
+                <select id="todo-category" name="category" required>
                     <option value="Choose Category" disabled>Choose Category</option>
                     <option value="Personal">Personal</option>
                     <option value="School">School</option>
@@ -26,7 +26,7 @@
             </div>
             <div class="form-box">
                 <label for="todo-date">due date</label>
-                <input id="todo-date" name="date" type="date">
+                <input id="todo-date" name="date" type="date" required>
             </div>
         </div>
     </form>
